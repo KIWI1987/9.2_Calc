@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konvertor valut</title>
+</head>
+
+<body>
+
+    <h1>Konvertor valut</h1>
+
+    <form action="/" method="POST">
+        <select name="value">
+            <option selected>From Currency</option>
+            {%for key,value in country.items()%}
+            <option type="text">{{key}}</option>
+            {%endfor%}
+        </select>
+        <input type="number" placeholder="amount" name="count">
+        <button type="submit">Convert</button>
+
+</body>
+
+</html>
